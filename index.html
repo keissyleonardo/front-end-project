@@ -11,9 +11,13 @@
   <link rel="manifest" href="site.webmanifest">
   <link rel="apple-touch-icon" href="icon.png">
   <!-- Place favicon.ico in the root directory -->
-
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/main.css">
+
+
 </head>
 
 <body>
@@ -40,11 +44,56 @@
           </div>
           <div class="nav-bar">
               <ul class="menu">
-                  <li class="about"><button>About</button></li>
+                  <li class="about">
+                      <div  class="dropup">
+                        <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown" style="border-color: white; text-transform: uppercase">About</button>
+                        <ul class="dropdown-menu">
+                                <li><a href="#">ABOUT</a></li>
+                                <li><a href="#">Restaurant</a></li>
+                                <li><a href="#">Team</a></li>
+                                <li><a href="#">History</a></li>
+                                <li><a href="#">Info & Directions</a></li>
+                                <li><a href="#">Gift Experience</a></li>
+                              </ul>
+                      </div>
+                    </li>
+
                   <li class="reservations"><button>Reservations</button></li>
-                  <li class="menu-stories"><button>Menus & Stories</button></li>
-                  <li class="drinks"><button>Wine & Spirits</button></li>
-                  <li class=private><button>Private Dining & Events</button></li>
+
+
+                  <li class="menu-stories">                      
+                      <div  class="dropup">
+                        <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown" style="border-color: white; text-transform: uppercase">Menu & Stories</button>
+                            <ul class="dropdown-menu">
+                                    <li><a href="#">Menu & Stories</a></li>
+                                    <li><a href="#">Daily Menu</a></li>
+                                    <li><a href="#">Farmers & Foragers</a></li>
+
+                            </ul>
+                      </div>
+                    </li>
+                  <li class="drinks">                      
+                      <div  class="dropup">
+                        <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown" style="border-color: white; text-transform: uppercase">Wine & Spirits</button>
+                            <ul class="dropdown-menu">
+                                <li style="font-weight: bolder;"><a href="#">Wine & Spirits</a></li>
+                                <li><a href="#">About The Wine Program</a></li>
+                                <li><a href="#">Wine Selections</a></li>
+                                <li><a href="#">About The Spirits Program</a></li>
+                                <li><a href="#">Spitirs Selections</a></li>
+                              </ul>
+                      </div>
+                    </li>
+                  <li class=private>                 
+                      <li class="about">
+                        <div  class="dropup">
+                          <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown" style="border-color: white; text-transform: uppercase">Private Dining & Events</button>
+                          <ul class="dropdown-menu">
+                                  <li><a href="#">Private Dining & Events</a></li>
+                                  <li><a href="#">General Information</a></li>
+                                </ul>
+                        </div>
+                    </li>
               </ul>
           </div>
           <br class="clear">
